@@ -161,6 +161,23 @@ main {
     text-align: center;
 }
 
+.nosotros {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.nosotros h2{
+    text-align: center;
+}
+
+
+
+.garantias h3{
+    text-align: center;
+}
+
 /* -----------------------------------------------footer----------------------------------------------------------- */
 /* Estilos footer */
 footer{
@@ -179,9 +196,6 @@ footer{
     justify-content: center;
 }
 
-.garantias{
-    text-align: center;
-}
 
 /* ------------------------------------------------MEDIAQUERIE--------------------------------------------------------- */
 
@@ -222,6 +236,11 @@ footer{
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    .nosotros {
+        flex-wrap: wrap;
+    }
+    
     
 
 }
