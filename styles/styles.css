@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Paleta de colores https://www.colorhunt.co/palette/2c39303f4f44a27b5cdcd7c9 */
+
+
+/* -----------------------------------------Header----------------------------------------------------------- */
+
+/* Estilos header */
+header{
+    background-color: #3f4f44;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+
+}
+/* estilo del logo */
+.logo{
+    order: 1;
+    height: 100px;
+    border-radius: 50%;
+}
+/* barra de busqueda */
+.buscar {
+    order: 2;
+    flex: 1;
+    width: 500px;
+    max-width: 500px;
+}
+.buscar input{
+    min-width: 90%;
+    padding: 1rem;
+}
+
+/* barra de navegacion */
+header nav{
+    order: 3;
+}
+/* Estilos barra navegacion */
+header nav ul {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    gap: 1rem;
+}
+
+/* Estilos links navegacion */
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    background-color: #a27b5c;
+    border-radius: 10%;
+}
+
+
+/* --------------------------------------------MEDIAQUERIE------------------------------------------------- */
+
+
+
+/* -----------------------------------------banner----------------------------------------------------------- */
+
+/* Esto es para el background del titulo */
+.banner{
+    text-transform: uppercase;
+    background-image: url("../img/Firefly\ fondo\ negro\ de\ formahorizontal\ con\ agujetas\ de\ varios\ colores\ \ 36792.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    /* Centrado horizontal */
+    justify-content: center;
+    /* Centrado vertical */
+    align-items: center;
+    height: 20vh;
+}
+
+.titulo-principal{
+    color: white;
+    backdrop-filter: blur(20px);
+    padding: 15px;
+    text-transform: uppercase;
+    border-radius: 20%;
+    font-size: 50px;
+}
+
+
+/* -----------------------------------------Main----------------------------------------------------------- */
+
+/* Este es el titulo que va en la barra horizontal */
+h1{
+    
+    /* Esto se utiliza para que un texto se vea enfrente de una imagen */
+    color: black;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.tenis-principales{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.tenis-principales div {
+    text-align: center;
+}
+
+/* Estilos body */
+html, body{
+    height: 100%;
+    background-color: #dcd7c9;
+    display: flex;
+    flex-direction: column;
+}
+
+.img{
+    height: 300px;
+}
+
+.buscar{
+    text-align: center;
+}
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: space-evenly;
+
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.p{
+    border: 2px solid black ;
+    background-color: #a27b5c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descripcion{
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto-principal {
+    text-align: center;
+}
+
+/* -----------------------------------------------footer----------------------------------------------------------- */
+/* Estilos footer */
+footer{
+    background-color: #a27b5c;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+.productos div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 50px;
+    justify-content: center;
+}
+
+.garantias{
+    text-align: center;
+}
+
+/* ------------------------------------------------MEDIAQUERIE--------------------------------------------------------- */
+
+@media (max-width: 500px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .logo {
+        order: 1;
+    }
+    .buscar {
+        order: 3;
+        width: 100%;
+        max-width: 500px;
+    }
+    .buscar input{
+        min-width: 100%;
+        padding: 0.5rem;
+    }
+    
+
+    header nav{
+        order: 2;
+
+    }
+
+    header nav ul {
+        text-align: center;
+        padding: 0;
+        gap: 1rem;
+    }
+
+    .productos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+
+}
