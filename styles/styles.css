@@ -21,6 +21,8 @@ header{
     gap: 1rem;
 
 }
+
+
 /* estilo del logo */
 .logo{
     order: 1;
@@ -40,11 +42,11 @@ header{
 }
 
 /* barra de navegacion */
-header nav{
+.navegacion {
     order: 3;
 }
 /* Estilos barra navegacion */
-header nav ul {
+.navegacion ul {
     display: flex;
     list-style: none;
     text-align: center;

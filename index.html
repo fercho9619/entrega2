@@ -18,19 +18,27 @@
             <a href="../index.html"><img class="logo" src="../img/logotipo.jpg" alt=""></a>
         </div>
 
-        <!-- Indice de navegacion a las paginas  -->
-        <div class="buscar">
-            <input type="text" placeholder="Buscar productos"><button>Buscar</button>
-        </div>
-            <nav>
-                <ul class="navegacion">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="pages/productos.html">Productos</a></li>
-                    <li><a href="pages/tiendas.html">Tiendas</a></li>
-                    <li><a href="pages/contacto.html">Contacto</a></li>
-                    <li><a href="pages/nosotros.html">Nosotros</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg" >
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">Inicio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse navegacion" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="pages/productos.html">Productos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pages/tiendas.html">Tiendas</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pages/nosotros.html">Nosotros</a></li>
+                        </ul>
+                        <form class="d-flex buscar buscar" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
             </nav>
+            
     </header>
 
     <!-- Titulo principal de la pagina -->
@@ -67,5 +75,8 @@
 
         </div>
     </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
