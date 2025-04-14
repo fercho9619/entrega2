@@ -1,0 +1,126 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-around;
+}
+@import "utilidades/variables";
+
+header{
+    display: flex;
+    background-color: #3f4f44;
+    padding: 10px;
+    justify-content: space-between;
+
+    .logo{
+        height: 100px;
+        border-radius: 50%;
+        top: 0;
+        left: 0;
+    }
+
+    .navbar{
+        padding: 10px;
+    }
+    .navbar-brand {
+        background-color: #a27b5c;
+        border-radius: 20%;
+        padding: 10px;
+        border: 2px solid black ;
+        align-items: center;
+        text-transform: uppercase;
+    }
+    .navbar-nav{
+        display: flex;
+
+        .nav-item{
+            background-color: #a27b5c;
+            border-radius: 20%;
+            width: fit-content;
+            border: 2px solid black ;
+            color: black;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 10px;
+        }
+    }
+}
+
+.banner{
+    text-transform: uppercase;
+    background-image: url("../img/agujeta-fondo-negro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    /* Centrado horizontal */
+    justify-content: center;
+    /* Centrado vertical */
+    align-items: center;
+    height: 20vh;
+
+    h1{
+        color: white;
+        backdrop-filter: blur(20px);
+        padding: 15px;
+        text-transform: uppercase;
+        border-radius: 20%;
+        font-size: 50px;
+    }
+}
+
+h1{
+    color: black;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #dcd7c9;
+    flex-grow: 1;
+    padding: 30px;
+    justify-content: space-evenly;
+    p{            
+        text-align: center; 
+    }
+
+    .img{
+        height: 300px;
+    }
+
+    .tenis-principales{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        div{
+            text-align: center;
+        }
+    }
+
+    .productos{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        div{
+            border: 2px solid black ;
+            background-color: #a27b5c;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+        }
+    }
+}
+
+footer{
+    background-color: #a27b5c;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
