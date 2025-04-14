@@ -25,12 +25,22 @@ header .navbar-brand {
   background-color: #a27b5c;
   border-radius: 20%;
   padding: 10px;
+  border: 2px solid black;
+  align-items: center;
+  text-transform: uppercase;
 }
 header .navbar-nav {
+  display: flex;
+}
+header .navbar-nav .nav-item {
   background-color: #a27b5c;
   border-radius: 20%;
+  width: fit-content;
+  border: 2px solid black;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
   padding: 10px;
-  gap: 10px;
 }
 
 .banner {
@@ -55,6 +65,13 @@ header .navbar-nav {
   font-size: 50px;
 }
 
+h1 {
+  color: black;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -63,6 +80,32 @@ main {
   flex-grow: 1;
   padding: 30px;
   justify-content: space-evenly;
+}
+main p {
+  text-align: center;
+}
+main .img {
+  height: 300px;
+}
+main .tenis-principales {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+main .tenis-principales div {
+  text-align: center;
+}
+main .productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+main .productos div {
+  border: 2px solid black;
+  background-color: #a27b5c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
 }
 
 footer {

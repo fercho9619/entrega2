@@ -5,6 +5,7 @@ body{
     min-height: 100vh;
     justify-content: space-around;
 }
+@import "utilidades/variables";
 
 header{
     display: flex;
@@ -26,12 +27,23 @@ header{
         background-color: #a27b5c;
         border-radius: 20%;
         padding: 10px;
+        border: 2px solid black ;
+        align-items: center;
+        text-transform: uppercase;
     }
     .navbar-nav{
-        background-color: #a27b5c;
-        border-radius: 20%;
-        padding: 10px;
-        gap: 10px;
+        display: flex;
+
+        .nav-item{
+            background-color: #a27b5c;
+            border-radius: 20%;
+            width: fit-content;
+            border: 2px solid black ;
+            color: black;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 10px;
+        }
     }
 }
 
@@ -59,6 +71,13 @@ header{
     }
 }
 
+h1{
+    color: black;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 main{
     display: flex;
     flex-direction: column;
@@ -67,6 +86,35 @@ main{
     flex-grow: 1;
     padding: 30px;
     justify-content: space-evenly;
+    p{            
+        text-align: center; 
+    }
+
+    .img{
+        height: 300px;
+    }
+
+    .tenis-principales{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        div{
+            text-align: center;
+        }
+    }
+
+    .productos{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        div{
+            border: 2px solid black ;
+            background-color: #a27b5c;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+        }
+    }
 }
 
 footer{
