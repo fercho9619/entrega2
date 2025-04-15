@@ -20,27 +20,16 @@ header .logo {
 }
 header .navbar {
   padding: 10px;
-}
-header .navbar-brand {
-  background-color: #a27b5c;
-  border-radius: 20%;
-  padding: 10px;
-  border: 2px solid black;
-  align-items: center;
-  text-transform: uppercase;
+  background-color: #3f4f44 !important;
 }
 header .navbar-nav {
-  display: flex;
+  font-size: 1.2rem;
 }
 header .navbar-nav .nav-item {
-  background-color: #a27b5c;
-  border-radius: 20%;
-  width: fit-content;
-  border: 2px solid black;
-  color: black;
+  margin: 0.7rem;
   text-transform: uppercase;
   text-align: center;
-  padding: 10px;
+  padding: 5px;
 }
 
 .banner {
@@ -105,7 +94,33 @@ main .productos div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px;
+  flex-wrap: wrap;
+  margin: 50px;
+  justify-content: center;
+}
+main .productos div div {
+  padding: 10px;
+}
+main .nosotros {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  gap: 2rem;
+}
+main .nosotros h2 {
+  text-align: center;
+}
+main .garantias h2 {
+  text-align: center;
+}
+main .buscar {
+  text-align: center;
+}
+main .resultado {
+  text-align: center;
+}
+main .subTituloContacto {
+  text-align: center;
 }
 
 footer {
@@ -113,6 +128,31 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 10px;
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  header .navbar-nav {
+    font-size: 1rem;
+  }
+  header .navbar-nav .nav-item {
+    margin: 0.1rem;
+    padding: 1px;
+  }
+  .productos {
+    display: flex !important;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nosotros {
+    flex-wrap: wrap;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

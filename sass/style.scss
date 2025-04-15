@@ -12,6 +12,7 @@ header{
     background-color: #3f4f44;
     padding: 10px;
     justify-content: space-between;
+    
 
     .logo{
         height: 100px;
@@ -20,29 +21,20 @@ header{
         left: 0;
     }
 
-    .navbar{
+    .navbar {
         padding: 10px;
+        background-color: #3f4f44 !important;
     }
-    .navbar-brand {
-        background-color: #a27b5c;
-        border-radius: 20%;
-        padding: 10px;
-        border: 2px solid black ;
-        align-items: center;
-        text-transform: uppercase;
-    }
+
     .navbar-nav{
-        display: flex;
+        font-size: 1.2rem;
 
         .nav-item{
-            background-color: #a27b5c;
-            border-radius: 20%;
-            width: fit-content;
-            border: 2px solid black ;
-            color: black;
+            
+            margin: .7rem;
             text-transform: uppercase;
             text-align: center;
-            padding: 10px;
+            padding: 5px;
         }
     }
 }
@@ -112,10 +104,46 @@ main{
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin: 10px;
+            flex-wrap: wrap;
+            margin: 50px;
+            justify-content: center;
+            div{
+                padding: 10px;
+            }
         }
     }
+
+
+    .nosotros {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1rem;
+        gap: 2rem;
+        h2{
+            text-align: center;
+        }
+    }
+
+    .garantias{
+        h2{
+            text-align: center;
+        }
+    }
+
+    .buscar{
+        text-align: center;
+    }
+    .resultado{
+        text-align: center;
+    }
+
+    .subTituloContacto{
+        text-align: center;
+
+    }
 }
+
+
 
 footer{
     background-color: #a27b5c;
@@ -124,3 +152,31 @@ footer{
     padding: 10px;
 }
 
+@media (max-width: 700px)  {
+    header{
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+
+        .navbar-nav{
+            font-size: 1rem;
+    
+            .nav-item{
+                
+                margin: .1rem;
+                padding: 1px;
+            }
+        }
+    }
+    .productos{
+        display: flex !important;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nosotros {
+        flex-wrap: wrap;
+    }
+}
