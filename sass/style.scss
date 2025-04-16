@@ -148,8 +148,14 @@ main{
 footer{
     background-color: #a27b5c;
     display: flex;
-    justify-content: space-between;
     padding: 10px;
+    justify-content: space-around;
+    .red{
+        align-items: center;
+        height: 50px;
+        margin: 5px;
+    }
+    
 }
 
 @media (max-width: 700px)  {
