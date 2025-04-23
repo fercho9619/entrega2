@@ -74,7 +74,7 @@ main {
   padding: 30px;
   justify-content: space-evenly;
 }
-main p {
+main .texto-principal {
   text-align: center;
   padding-inline: 10%;
 }
